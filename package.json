@@ -1,0 +1,44 @@
+{
+  "name": "digibit-studio",
+  "version": "1.0.0",
+  "description": "Digibit Studio Official Landing page",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/digibitstudio/digibit-studio.git"
+  },
+  "keywords": [
+    "Digibit Studio",
+    "Landing Page",
+    "Single Page app"
+  ],
+  "author": "Digibit Studio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/digibitstudio/digibit-studio/issues"
+  },
+  "homepage": "https://github.com/digibitstudio/digibit-studio#readme",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^6.1.0",
+    "css-loader": "^4.3.0",
+    "html-webpack-plugin": "^4.4.1",
+    "sass": "^1.26.10",
+    "sass-loader": "^10.0.2",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.1.4",
+    "webpack-pwa-manifest": "^4.2.0",
+  },
+  "dependencies": {
+    "regenerator-runtime": "^0.13.7"
+  }
+}
