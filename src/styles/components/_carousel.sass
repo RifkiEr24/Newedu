@@ -1,0 +1,138 @@
+.video-container
+  position: relative
+  margin: auto
+  height: 100%
+  padding-bottom: 5rem
+  @include media-in(tablet)
+    padding-bottom: 8.5rem
+
+.video-controller
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  width: 100%
+  position: absolute
+  display: flex
+  justify-content: space-between
+  padding-bottom: 5rem
+  @include media-in(tablet)
+    padding-bottom: 8.5rem
+  button
+    display: none
+    @include media-in(tablet)
+      display: block
+      font-size: 3rem
+      height: fit-content
+      padding: 1rem
+      border-radius: 1.5rem
+      margin-top: auto
+      margin-bottom: auto
+      transition: 0.3s
+      &:hover
+        transition: 0.3s
+        color: #ffffff
+        background-color: $purple
+        @include drop-shadow($purple)
+    &#prevButton
+      margin-left: 0rem
+      @include media-in(tablet)
+        margin-left: -5rem
+      @include media-in(desktop)
+        margin-left: -8.5rem
+    &#nextButton
+      margin-right: 0rem
+      @include media-in(tablet)
+        margin-right: -5rem
+      @include media-in(desktop)
+        margin-right: -8.5rem
+
+.video-controller3
+  @extend .video-controller2
+  button
+    @include media-in(tablet)
+        &:hover
+          transition: 0.3s
+          color: #000000
+          background-color: #ffffff
+          @include drop-shadow(#ffffff)
+
+.video-controller2
+  @extend .video-controller
+  button
+    &#prevButton2
+      margin-left: 0rem
+      @include media-in(tablet)
+        margin-left: -3rem
+      @include media-in(desktop)
+        margin-left: -8.5rem
+    &#nextButton2
+      margin-right: 0rem
+      @include media-in(tablet)
+        margin-right: -3rem
+      @include media-in(desktop)
+        margin-right: -8.5rem
+
+.video-indicator
+  padding-top: 1rem
+  margin: 0 auto
+  display: flex
+  justify-content: center
+
+  button
+    transition: 0.3s
+    z-index: 1
+    margin: 4px
+    width: 16px
+    height: 16px
+    background-color: #2e2e2e
+    border-radius: 16px
+    &:hover
+      transition: 0.3s
+      width: 32px
+
+.siema
+  border-radius: 1.5rem
+  width: 300px
+  height: 180px
+  @include drop-shadow(#c9c9c9, 50px, 50px)
+  @include media-in(tablet)
+    width: 600px
+    height: 338px
+  .video-wrapper 
+    position: relative
+    padding-bottom: 56.25%
+    height: 0
+    iframe 
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      
+.siema2
+  height: fit-content
+  max-width: 300px
+  @include media-in(tablet)
+    max-width: 660px
+
+.carousel-controller
+  display: flex
+  margin-top: auto
+  justify-content: space-between
+  gap: 0.5rem
+  padding: 1rem 2rem
+  button
+    display: block
+    font-size: 2.5rem
+    height: fit-content
+    padding: 0.5rem
+    border-radius: 1.5rem
+    margin-top: auto
+    margin-bottom: auto
+    transition: 0.3s
+    &:hover
+        transition: 0.3s
+        color: #ffffff
+        background-color: $purple
+        @include drop-shadow($purple)

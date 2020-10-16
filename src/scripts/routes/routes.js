@@ -1,13 +1,13 @@
 import Home from "../views/pages/home";
-import Works from "../views/pages/works";
-import Products from "../views/pages/products";
+import Gallery from "../views/pages/gallery";
 import About from "../views/pages/about";
+import Tips from "../views/pages/tips";
 
 const Routes = {
   '/': Home,
   '/home': Home,
-  '/works': Works,
-  '/products': Products,
+  '/gallery': Gallery,
+  '/tips' : Tips,
   '/about': About,
 };
 

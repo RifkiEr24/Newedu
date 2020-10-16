@@ -1,27 +1,26 @@
 {
-  "name": "digibit-studio",
+  "name": "progreshift",
   "version": "1.0.0",
-  "description": "Digibit Studio Official Landing page",
+  "description": "Ahigacha's Website Design submission for Hiedescom 2020",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --config webpack.dev.js",
+    "start-dev": "webpack-dev-server --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/digibitstudio/digibit-studio.git"
+    "url": "git+https://github.com/Shaddamah/progreshift.git"
   },
   "keywords": [
-    "Digibit Studio",
-    "Landing Page",
-    "Single Page app"
+    "Hiedescom",
+    "2020"
   ],
-  "author": "Digibit Studio",
+  "author": "Ahigacha",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/digibitstudio/digibit-studio/issues"
+    "url": "https://github.com/Shaddamah/progreshift/issues"
   },
-  "homepage": "https://github.com/digibitstudio/digibit-studio#readme",
+  "homepage": "https://github.com/Shaddamah/progreshift#readme",
   "devDependencies": {
     "@babel/core": "^7.11.6",
     "@babel/preset-env": "^7.11.5",
@@ -29,16 +28,27 @@
     "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^6.1.0",
     "css-loader": "^4.3.0",
-    "html-webpack-plugin": "^4.4.1",
+    "file-loader": "^6.1.0",
+    "mini-css-extract-plugin": "^0.11.2",
+    "node-sass": "^4.14.1",
     "sass": "^1.26.10",
     "sass-loader": "^10.0.2",
+    "style-loader": "^1.2.1",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0",
     "webpack-merge": "^5.1.4",
     "webpack-pwa-manifest": "^4.2.0",
+    "workbox-webpack-plugin": "^5.1.4"
   },
   "dependencies": {
-    "regenerator-runtime": "^0.13.7"
+    "animejs": "^3.2.0",
+    "aos": "^2.3.4",
+    "html-webpack-plugin": "^4.4.1",
+    "photoswipe": "^4.1.3",
+    "regenerator-runtime": "^0.13.7",
+    "siema": "^1.5.1",
+    "sweetalert2": "^10.3.3",
+    "tippy.js": "^6.2.6"
   }
 }
